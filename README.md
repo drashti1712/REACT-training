@@ -299,10 +299,42 @@ Reconcillation --> to be explained.
 
 npx create-react-app customerapp
 
+npx create-react-app customerapp --template typescript
+
 npx is [npm install + execute]
 
 react-scripts --> internally executes "Webpack commands"
 
+=========
 
-@babel/preset-react
+Rendering --> visual element [ DOM for Web, for TV, for Desktop, ...]
+https://github.com/chentsulin/awesome-react-renderer
 
+
+https://claudiopro.github.io/react-fiber-vs-stack-demo/
+
+Upto React 17 version: Stack architecture
+```
+import ReactDOM from 'react-dom';
+ReactDOM.render(<App />, document.getElementById('root'));
+```
+
+From React 18 version onwards: Fiber architecture, concurrency
+```
+import ReactDOM from 'react-dom/client';
+ const root = ReactDOM.createRoot(document.getElementById('root'));
+ root.render(<App />);
+
+```
+
+How to create React elements?
+* React.createElement
+* class components --> around 2%
+* functional components --> around 98%
+
+class components
+* extends Component [inheritance]
+* can have state and behaviour
+* should have render() method to return JSX
+
+https://react.dev/learn/thinking-in-react
