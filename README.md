@@ -344,3 +344,9 @@ https://react.dev/learn/thinking-in-react
 Reconcillation is a process of finding VDOM difference and trigger re-rendering of components
 
 https://legacy.reactjs.org/docs/reconciliation.html
+
+
+===
+
+npx create-react-app recipeapp
+

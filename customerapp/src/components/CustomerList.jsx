@@ -20,11 +20,9 @@ export default class CustomerList extends Component {
         console.log("<CustomerList />", id)
         let custs = this.state.original.filter(c => c.id !== id);
         // this.state.customers = custs; // won't work --> won't reconcil --> not force render();
-        console.log(this.state.customers.length);
-
         // use setState() to update state and force reconcillation
         this.setState({
-            customers: custs
+            original: custs
         })
     }
 
