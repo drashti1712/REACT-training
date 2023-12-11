@@ -284,3 +284,25 @@ document.createElement()
 source maps 
 https://webpack.js.org/configuration/devtool/
  devtool: "cheap-module-source-map",
+
+ =============
+
+ React Node: are not real DOM nodes, but a representation of a potential DOM node.
+ The representation is considered as the "VirtualDOM"
+ React Node can be: ReactElement, ReactFragment, a string, a number, array of React nodes, null, undefined, boolean
+
+JSX.Element is a ReactElement with generic type["like h1, div,.."], props and can have children
+
+======================
+
+Reconcillation --> to be explained.
+
+npx create-react-app customerapp
+
+npx is [npm install + execute]
+
+react-scripts --> internally executes "Webpack commands"
+
+
+@babel/preset-react
+
