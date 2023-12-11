@@ -281,3 +281,6 @@ var Welcome = React.createElement("div", {
 
 React.createElement() is the core React API --> wrapper for 
 document.createElement()
+source maps 
+https://webpack.js.org/configuration/devtool/
+ devtool: "cheap-module-source-map",
