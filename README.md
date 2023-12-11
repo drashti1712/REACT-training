@@ -184,4 +184,72 @@ webpack-react> npm i babel-loader @babel/core @babel/preset-env -D
 
 webpack-react> npm i react react-dom
 
+webpack-react> npm i  @babel/preset-react -D
+
 All dependencies and transitive-dependencies are installed in "node_modules" folder
+
+Team members --> download the project minus "node_modules" folder and
+run
+
+webpack-react> npm install
+
+====================================
+
+webpack & webpack-cli ==> build tools for uglify, minify, bundle
+
+Babel is a free and open-source JavaScript transcompiler that is mainly used to convert ECMAScript 2015+ code into backwards-compatible JavaScript code that can be run by older JavaScript engines. 
+
+TypeScript Compiler ==> Typescript code to  JavaScript code that can be run by older JavaScript engines.
+
+@babel/core --> Babel Transpiler / Transcompiler / pre-processor
+
+babel-loader --> loads imported JS file using ESModule system into memory
+Example:
+Product.js
+code
+
+Other file:
+import Product from './Product';
+
+babel-loader --> load file into memory --> @babel/core --> transcompile --> lower version
+
+https://caniuse.com/
+
+Polyfill: A polyfill is a piece of code (usually JavaScript on the Web) used to provide modern functionality on older browsers that do not natively support it.
+
+@babel/preset-env is a smart preset that allows you to use the latest JavaScript without needing to micromanage which syntax transforms (and optionally, browser polyfills) are needed by your target environment(s). 
+
+* babel-loader, @babel/core, @babel/preset-env
+
+
+ES 6 module system uses: [ babel-loader knows this]
+export and import
+
+CommonJS module system [ default by NodeJS] uses:
+module.exports and require
+
+```
+npm run dev
+asset bundle.js 4.39 KiB [emitted] (name: main)
+
+npm run prod
+asset bundle.js 147 bytes [emitted] [minimized] (name: main)
+```
+
+HtmlWebpackPlugin
+The HtmlWebpackPlugin simplifies creation of HTML files to serve your webpack bundles. This is especially useful for webpack bundles that include a hash in the filename which changes every compilation.
+<script src="dist/bundle.greer24@.js"></script>
+<script src="dist/bundle.@52d#211.js"></script>
+
+<script src="dist/bundle.js"></script> --> cachenpm i webpack-dev-server -D in browser
+
+=====
+
+webpack-dev-server
+
+npm i webpack-dev-server -D
+
+ "start": "webpack serve --mode development",
+
+ npm start
+ 
