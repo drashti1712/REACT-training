@@ -336,5 +336,11 @@ class components
 * extends Component [inheritance]
 * can have state and behaviour
 * should have render() method to return JSX
-
+* state and props are pre-defined
+props --> data passed from parent to child [ attributes & children]
 https://react.dev/learn/thinking-in-react
+
+
+Reconcillation is a process of finding VDOM difference and trigger re-rendering of components
+
+https://legacy.reactjs.org/docs/reconciliation.html
