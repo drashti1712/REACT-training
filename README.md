@@ -172,8 +172,16 @@ Webpack --> default tool used by frameworks like Angular and libraries like Reac
 
 Build hello world react application using Webpack from scratch.
 
+1) initilize a node project
+webpack-react> npm init --y
+creates package.json
+--> place where scripts are configured
+--> place where all dependencies and "development dependencies" are configured
 
+webpack-react> npm i webpack webpack-cli html-webpack-plugin css-loader style-loader -D
 
+webpack-react> npm i babel-loader @babel/core @babel/preset-env -D
 
+webpack-react> npm i react react-dom
 
-
+All dependencies and transitive-dependencies are installed in "node_modules" folder
