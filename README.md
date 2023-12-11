@@ -350,5 +350,42 @@ https://legacy.reactjs.org/docs/reconciliation.html
 
 npx create-react-app recipeapp
 
+==================================================
 
+React 16.8 version onwards --> Prefer functional components instead of class components
+* class components are heavy
+
+What does class components provide?
+* state
+* behaviour
+* life-cycle methods
+
+1. Mounting phase:
+constructor() ==> render() ==> componentDidMount()
+
+constructor() ==> initialize the state -> data ==> can be mock data/placeholder data
+render() --> create view with placeholder data
+componentDidMount() --> make API call to server, get the data and update the state
+
+once state updates or props change --> Updating phase
+
+Why this is important? ---> FCP First Contentful Paint
+
+
+
+2. Updating Phase
+once state updates or props change
+shouldComponentUpdate() --> false
+shouldComponentUpdate() --> true --> render() --> componentDidUpdate()
+
+componentDidUpdate() --> can have any dependent API call
+
+3. Unmounting --> before component is destroyed
+componentWillUnmount()
+--> unsubscribe if you have subscribed for any service
+Example: firebase notification --> subscribe
+componentWillUnmount() ==> unsubscribe
+
+--> Before component is destroyed --> Confirm Dialog
+-> Thank you for using this App
 
