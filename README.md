@@ -252,4 +252,32 @@ npm i webpack-dev-server -D
  "start": "webpack serve --mode development",
 
  npm start
- 
+
+ ===
+
+ css-loader allows us to import css file in "js"
+ import './style.css';
+
+ loaded css file is given to "style-loader";
+ style-loader places the code in 
+ <style>
+</style>
+
+=============
+
+React without using react library:
+
+React Demystify:
+
+
+var Welcome = React.createElement("div", {
+  className: "card"
+}, React.createElement("h1", {
+  className: "card-header"
+}, "React Welcome"), React.createElement("p", null, "Good Day!!!"));
+
+
+====
+
+React.createElement() is the core React API --> wrapper for 
+document.createElement()
